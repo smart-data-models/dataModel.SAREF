@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://smart-data-models.github.com/dataModel.SAREF/commons",
+  "title": "Common definitions for SAREF for buildings",
+  "definitions": {
+    "Measurement": {
+      "type": "number",
+      "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
+    },
+    "PhysicalObject": {
+      "type": "object",
+      "description": "Any Object that has a proper space region.  (Definition extracted from DUL ontology)",
+      "allOf": [
+        {
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "Property. It must be equal to `PhysicalObject`.",
+              "enum": [
+                "PhysicalObject"
+              ]
+            },
+            "isContainedInBuildingSpace": {
+              "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
+              "description": "Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)"
+            },
+            "isContainedInPhysicalObject": {
+              "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
+              "description": "Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)"
+            },
+            "isSubSystemOf": {
+              "type": "array",
+              "description": "Relationship. A reference to a system(s) that this Physical Object is part of.",
+              "items": {
+                "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
+                "description": "Relationship. The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems. Connected systems interact in some ways. Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem. (System)"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

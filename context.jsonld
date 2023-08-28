@@ -1,0 +1,30 @@
+{
+    "@context": {
+        "Meter": "https://smartdatamodels.org/dataModel.SAREF/Meter",
+        "Sensor": "https://smartdatamodels.org/dataModel.SAREF/Sensor",
+        "address": "https://smartdatamodels.org/address",
+        "alternateName": "https://smartdatamodels.org/alternateName",
+        "areaServed": "https://smartdatamodels.org/areaServed",
+        "dataProvider": "https://smartdatamodels.org/dataProvider",
+        "dateCreated": "https://smartdatamodels.org/dateCreated",
+        "dateModified": "https://smartdatamodels.org/dateModified",
+        "description": "http://purl.org/dc/terms/description",
+        "hasManufacturer": "https://smartdatamodels.org/dataModel.SAREF/hasManufacturer",
+        "hasMeterReading": "https://smartdatamodels.org/dataModel.SAREF/hasMeterReading",
+        "hasMeterReadingType": "https://smartdatamodels.org/dataModel.SAREF/hasMeterReadingType",
+        "hasModel": "https://smartdatamodels.org/dataModel.SAREF/hasModel",
+        "hasSensingRange": "https://smartdatamodels.org/dataModel.SAREF/hasSensingRange",
+        "hasSensorType": "https://smartdatamodels.org/dataModel.SAREF/hasSensorType",
+        "id": "@id",
+        "isContainedInBuildingSpace": "https://smartdatamodels.org/dataModel.SAREF/isContainedInBuildingSpace",
+        "isContainedInPhysicalObject": "https://smartdatamodels.org/dataModel.SAREF/isContainedInPhysicalObject",
+        "isSubSystemOf": "https://smartdatamodels.org/dataModel.SAREF/isSubSystemOf",
+        "location": "ngsi-ld:location",
+        "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "owner": "https://smartdatamodels.org/owner",
+        "seeAlso": "https://smartdatamodels.org/seeAlso",
+        "source": "https://smartdatamodels.org/source",
+        "type": "@type"
+    }
+}

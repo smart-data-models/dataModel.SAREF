@@ -8,6 +8,8 @@ A device built to accurately detect and display a quantity in a form readable by
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.SAREF/Meter/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.SAREF/blob/master/Meter/doc/spec.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.SAREF/Meter/examples/example.json) (keyvalues) for NGSI v2

@@ -2,11 +2,11 @@
   "id": "urn:ngsi-ld:Sensor:5164ac7d-f33a-4a9d-92c0-d85738dce5dc",
   "type": "Sensor",
   "hasSensingRange": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.6379919853662889
   },
   "hasSensorType": {
-    "type": "SensorHasSensorType",
+    "type": "Text",
     "value": "Motion"
   },
   "hasManufacturer": {
@@ -18,28 +18,19 @@
     "value": "Sensor 0.1.2"
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:dde4fa8f-da14-4e32-9061-53b1934b80dd"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:c1a7b6e1-9a70-4e7f-aecd-3a694da2ac1a"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:e55fb57f-3106-4f04-9121-ecc2eae1056f"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:f32c549f-7d88-48e9-804f-a4f758868bc0"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:0a12aeeb-5637-42dd-ad57-4b5e34dc929a"
-      }
+      "urn:ngsi-ld:System:e55fb57f-3106-4f04-9121-ecc2eae1056f",
+      "urn:ngsi-ld:System:f32c549f-7d88-48e9-804f-a4f758868bc0",
+      "urn:ngsi-ld:System:0a12aeeb-5637-42dd-ad57-4b5e34dc929a"
     ]
   },
   "dateCreated": {

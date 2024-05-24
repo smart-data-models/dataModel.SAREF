@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Meter"
 subject = "dataModel.SAREF"
-hasMeterReading = {'type': 'Property', 'unitCode': 'NA', 'observedAt': '2023-01-26T14:05:57Z', 'value': 0.2858275914845758}
+hasMeterReading = 0.3234784413713925
 attribute = "hasMeterReading"
 value = hasMeterReading
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-hasMeterReadingType = "{'type': 'Property', 'value': 'Smoke'}"
+hasMeterReadingType = "Energy"
 attribute = "hasMeterReadingType"
 value = hasMeterReadingType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-hasManufacturer = "{'type': 'Property', 'value': 'Meter Company Inc.'}"
+hasManufacturer = "Meter Company Inc."
 attribute = "hasManufacturer"
 value = hasManufacturer
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-hasModel = "{'type': 'Property', 'value': 'Meter 0.1.2'}"
+hasModel = "Meter 0.1.2"
 attribute = "hasModel"
 value = hasModel
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it

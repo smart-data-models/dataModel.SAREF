@@ -10,11 +10,11 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -31,7 +31,7 @@
         "isContainedInBuildingSpace": "https://smartdatamodels.org/dataModel.SAREF/isContainedInBuildingSpace",
         "isContainedInPhysicalObject": "https://smartdatamodels.org/dataModel.SAREF/isContainedInPhysicalObject",
         "isSubSystemOf": "https://smartdatamodels.org/dataModel.SAREF/isSubSystemOf",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "owner": "https://smartdatamodels.org/owner",

@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Meter of the subject dataModel.SAREF for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE hasMeterReadingType_type AS ENUM ('Coal', 'Electricity', 'Energy', 'Gas', 'Humidity', 'Light', 'Motion', 'Occupancy', 'Power', 'Pressure', 'Price', 'Smoke', 'Temperature', 'Water');
+CREATE TYPE Meter_hasMeterReadingType_type AS ENUM ('Coal', 'Electricity', 'Energy', 'Gas', 'Humidity', 'Light', 'Motion', 'Occupancy', 'Power', 'Pressure', 'Price', 'Smoke', 'Temperature', 'Water');
 CREATE TYPE Meter_type AS ENUM ('Meter');
 CREATE TABLE Meter (
   "address" JSON,
@@ -11,7 +11,7 @@ CREATE TABLE Meter (
   "description" TEXT,
   "hasManufacturer" TEXT,
   "hasMeterReading" NUMERIC,
-  "hasMeterReadingType" hasMeterReadingType_type,
+  "hasMeterReadingType" Meter_hasMeterReadingType_type,
   "hasModel" TEXT,
   "id" TEXT PRIMARY KEY,
   "isContainedInBuildingSpace" JSON,
